@@ -1,0 +1,8 @@
+<iframe class="jotform" id="jotform" src="https://gunnisonpages.github.io/jotform-nuf.html" style="width:100%;border:none;"></iframe>
+<script>
+window.onmessage = (e) => {
+    if (e.data.hasOwnProperty("frameHeight")) {
+    document.getElementById("jotform").style.height = `${e.data.frameHeight + 30}px`;
+    }
+};
+</script>

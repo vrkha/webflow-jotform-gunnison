@@ -6,3 +6,25 @@ window.onmessage = (e) => {
     }
 };
 </script>
+
+
+
+
+<iframe class="jotform" id="jotform" src="https://gunnisonpages.github.io/jotform-ets.html" style="width:100%;border:none;"></iframe>
+<script>
+  window.onmessage = (e) => {
+    if (e.data.hasOwnProperty("frameHeight")) {
+      document.getElementById("jotform").style.height = `${e.data.frameHeight + 30}px`;
+    }
+  };
+</script>
+<style type="text/css">
+  @media only screen and (max-width: 1040px) {
+    .flex-block-3 .hero-para .html-embed {
+      width:100%;
+    }
+    .flex-block-3 .hero-para {
+      width:100%;
+    }
+  }
+</style>
